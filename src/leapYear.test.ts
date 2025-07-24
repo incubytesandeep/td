@@ -3,12 +3,12 @@ import {describe, it, expect} from 'vitest';
 import isLeapYear from "./leapYear.ts";
 
 describe('isLeapYear should', () => {
-    it('return false if year not divisible by 4 and return true if year divisible by 4', () => {
+    it('return false if the year is undivisible by 4 and return true if year divisible by 4', () => {
         const yearDivisibleBy4 = 1992;
-        const yearNotDivisibleBy4 = 1995;
+        const yearUnDivisibleBy4 = 1995;
 
         expect(isLeapYear(yearDivisibleBy4)).toBe(true);
-        expect(isLeapYear(yearNotDivisibleBy4)).toBe(false);
+        expect(isLeapYear(yearUnDivisibleBy4)).toBe(false);
     })
 
     it('return true if year divisible by 400', () => {
