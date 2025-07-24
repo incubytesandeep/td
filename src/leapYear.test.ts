@@ -1,6 +1,6 @@
 import {describe, it, expect} from 'vitest';
 
-import isLeapYear from "./leapYear.js";
+import isLeapYear from "./leapYear.ts";
 
 describe('isLeapYear should', () => {
     it('return false if year not divisible by 4 and return true if year divisible by 4', () => {
